@@ -1,0 +1,7 @@
+<!--pages/info/info.wxml-->
+<notice-bar :scrollable="true" text="疫情期间，注意安全，戴好口罩，记得每日打卡哦!!!!!!!!!!!!!!!!!" left-icon="volume-o" />
+<view wx:for="{{list}}" wx:for-item="item">
+<panel title="{{item.Name}}" status="{{item.date}}">
+  <notice-bar :scrollable="true" text="{{item.inf}}" left-icon="volume-o" />
+</panel>
+</view>

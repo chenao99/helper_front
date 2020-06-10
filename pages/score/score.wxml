@@ -1,0 +1,43 @@
+<!--pages/Grade/Grade.wxml-->
+
+<view class='term'>
+	<view wx:for='{{termName}}' class='term-item {{termIndex==index?"term-select":""}}' data-index='{{index}}' bindtap='onTermClick'>{{item}}</view>
+</view>
+<view class='term'>
+	<view wx:for='{{termName_}}' class='term-item {{termIndex_==index?"term-select":""}}' data-index='{{index}}' bindtap='onTermClick_'>{{item}}</view>
+</view>
+<wux-prompt wx:if="{{ visible }}" icon="https://dreace.top/res/empty.png" title="这个学期好像还没有成绩" style="margin-top: 45%;" />
+
+<view wx:if='{{datas.length>0}}'>
+	<view class='grade-head'>
+		<view wx:for='{{heads}}' class='grade-head-item' style='flex:{{index==0?1:1}};'>{{item}}</view>
+	</view>
+	<view class='grade' wx:for='{{datas}}'>
+		<view class='grade-item' style='flex:1'>{{item.Course_Name}}</view>
+		<view class='grade-item' style='flex:1;color:#9b9b9b;'>{{item.Course_score}}</view>
+	</view>
+</view>
+<view class="cu-modal {{showExportModal?'show':''}}" style="font-size: 28rpx;  z-index: 99999999999999;background: rgba(0, 0, 0, 0.3);" catchtouchmove="preventTouchMove">
+  
+  
+  <view class="cu-dialog">
+    <view class="cu-bar bg-white justify-end">
+      
+      <view class="content">导出成绩</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+    
+    <view class="padding-xl" style="text-align: center;">
+      <view>选择需要导出的文件格式</view>
+    </view>
+    
+    <view class="cu-bar bg-white">
+      <view class="action margin-0 flex-sub  text-green solid-left" data-fileType="xls" bindtap="export">Excel(.xls)</view>
+      <view class="action margin-0 flex-sub  text-red solid-left"  data-fileType="pdf" bindtap="export">PDF(.pdf)</view>
+    <view class="action margin-0 flex-sub  text-black solid-left" bindtap="closethis">取消</view>
+    </view>
+
+  </view>
+</view>

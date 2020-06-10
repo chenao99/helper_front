@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#7acfa6",
+  "backgroundColor": "#7acfa6",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "usingComponents":{
+    "notice-bar":"/dist/notice-bar/index",
+    "panel":"/dist/panel/index",
+    "van-button":"/dist/button/index"
+  }
+}

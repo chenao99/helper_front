@@ -1,0 +1,88 @@
+{
+  "usingComponents":{
+    "notice-bar":"/dist/notice-bar/index"
+  },
+  "pages": [
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/studyplan/studying/studying",
+    "pages/studyplan/addplan/addplan",
+    "pages/welcome/welcome",
+    "pages/location/location",
+    "pages/info/info",
+    "pages/logs/logs",
+    "pages/netcost/netcost",
+    "pages/scourse/scourse",
+    "pages/table/index",
+    "pages/tcourse/tcourse",
+    "pages/tel/tel",
+    "pages/elecost/elecost",
+    "pages/score/score"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/map/map",
+        "pages/calendar/calendar"
+      ]
+    },
+    {
+      "root":"packageB",
+      "pages":[
+        "pages/index/index"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "校园疫情小助手",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于地图展示"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#4A6141",
+    "color": "#333",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "packageB/pages/index/index",
+        "text": "首页",
+        "iconPath": "packageB/images/index/main.png",
+        "selectedIconPath": "packageB/images/index/main1.png"
+      },
+      {
+        "pagePath": "pages/studyplan/studying/studying",
+        "text": "任务",
+        "iconPath": "packageB/images/index/daka.png",
+        "selectedIconPath": "packageB/images/index/daka1.png"
+      },
+      {
+        "pagePath": "pages/location/location",
+        "text": "定位打卡",
+        "iconPath": "packageB/images/index/dingwei.png",
+        "selectedIconPath": "packageB/images/index/dingwei1.png"
+      },
+      {
+        "pagePath": "pages/info/info",
+        "text": "通知",
+        "iconPath": "packageB/images/index/tongzhi.png",
+        "selectedIconPath": "packageB/images/index/tongzhi1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "packageB/images/index/my.png",
+        "selectedIconPath": "packageB/images/index/my1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap94.json"
+}

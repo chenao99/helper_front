@@ -1,0 +1,26 @@
+/* pages/studyplan/addplan/addplan.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  background: #CCCCCC;
+  height: 1300rpx;
+}
+
+.bd{
+  width: 700rpx;
+  height: 1rpx;
+  margin-top: 30rpx;
+  background: #bbf;
+}
+
+.bd-in{
+  width: 600rpx;
+  height: 2rpx;
+  margin-top: 30rpx;
+  background: #bbf;
+}
+
+.button{
+  margin-top: 60rpx;
+  width: 500rpx;
+}

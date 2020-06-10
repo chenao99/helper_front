@@ -1,0 +1,159 @@
+/* pages/mine/mine.wxss */
+@import "../common/weui.wxss";
+
+.radius {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.userinfo-avatar {
+  border-radius: 50rpx;
+  clip-path: circle(50% at center);
+  width: 120rpx;
+  height: 120rpx;
+  box-shadow: 5rpx 5rpx 15rpx #ccc;
+}
+
+.ads {
+  padding: 10rpx 15rpx 0rpx 15rpx;
+}
+
+.GreenBG {
+  background-color: #7acfa6;
+}
+
+button::after {
+  border: none;
+}
+
+.login-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #04c065;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 5rpx 5rpx 15rpx #ccc;
+  margin: 0 30rpx 30rpx;
+}
+
+.shareIcon {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 14px;
+  widows: 137.8625px;
+  /* height: 74.200px;   */
+}
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.logout-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #e55c5c;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  margin: 40rpx 3%;
+}
+
+.login-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #7acfa6;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  margin: 40rpx 3%;
+}
+
+/* 客服钮的 */
+
+.img-plus-style {
+  height: 100rpx;
+  width: 100rpx;
+  position: fixed;
+  top: 40rpx;
+  right: 25rpx;
+  opacity: 0.7;
+}
+
+.zindex100 {
+  z-index: 100;
+}
+
+.yc {
+  opacity: 0;
+}
+
+.zan-panel {
+  position: relative;
+  background: #fff;
+  margin-top: 10px;
+  overflow: hidden;
+}
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.zan-cell::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 0 solid #e5e5e5;
+  border-bottom-width: 1px;
+  left: 15px;
+  right: 0;
+}
+
+.zan-cell__bd {
+  flex: 1;
+}
+
+.zan-cell__ft {
+  position: relative;
+  text-align: right;
+  color: #666;
+}
+/*按钮样式*/
+.btn{
+  line-height: 120%;
+  background-color: #fff;
+  text-align: left;
+  margin-left: 0px;
+  padding-left: 0px;
+  font-size: 14px;
+}
+
+
+/*按钮边框去除*/
+.btn::after{
+  border: none;
+}

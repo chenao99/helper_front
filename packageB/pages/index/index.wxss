@@ -1,0 +1,197 @@
+/**index.wxss**/
+
+.page-section-spacing{
+  margin-top: 10rpx;
+  background: white;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.demo-text-1{
+  color: green;
+}
+.demo-text-2{
+  color: black;
+}
+.demo-text-3{
+  color: red;
+}
+.slide-image{
+    width: 100%;
+    height: 160px;
+}
+
+/*功能区*/
+
+.main-core {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  min-height: 350rpx;
+  overflow: hidden;
+  border-radius: 15rpx;
+   border-bottom: 1rpx solid #e5e5e5;
+  padding: 15rpx 10rpx 10rpx;
+
+}
+
+.main-core-item {
+  flex-direction: column;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40rpx;
+  box-sizing: border-box;
+  width: 25%;
+  height: 150rpx;
+}
+
+
+
+.core-item-icon {
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 10rpx auto;
+}
+
+.core-item-name {
+  text-align: center;
+  display: block;
+  margin: 5rpx;
+  font: "宋体";
+  color: #000000;
+}
+
+.main-swpier {
+  height: 390rpx;
+  margin: 0rpx 0rpx 10rpx 0rpx;
+  padding-top: 0rpx;
+}
+
+.main-swpier .wx-swiper-dots.wx-swiper-dots-horizontal {
+  bottom: 0;
+  margin-bottom: 5rpx;
+}
+
+.main-card {
+  padding-bottom: 300rpx;
+}
+
+.main-card-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1rpx solid #e5e5e5;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-bottom: 20rpx;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: bottom center;
+  overflow: hidden;
+}
+
+.card-item-hd {
+  display: flex;
+  align-items: center;
+  height: 75rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+  margin-left: 30rpx;
+}
+
+.card-item-name {
+  letter-spacing: 2px;
+}
+
+.card-item-more {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25rpx;
+}
+
+.card-item-open {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.card-item-bd {
+  padding: 20rpx 25rpx 30rpx 0;
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info-hd {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info-right {
+  display: flex;
+  color: #acacac;
+  flex-direction: column;
+}
+
+.card-info-name {
+  font-size: 16pt;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #acacac;
+}
+
+.card-info-number {
+  line-height: 175%;
+  text-indent: 1px;
+  color: #aaa;
+}
+
+.main-ending {
+  display: none;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 75rpx;
+  overflow: hidden;
+}
+
+.main-ending-text {
+  width: 72pt;
+  color: #ccc;
+  font-size: 8pt;
+  padding: 0 16rpx;
+  text-align: center;
+  white-space: nowrap;
+}
+.card{
+  margin-top: 40rpx;
+  display: block;
+  background: white;
+  width: 100%;
+  font-size: 18px;
+  color: #08aeab;
+}
+
+.card .tempreture{
+  text-align: center;
+  font-size: 20pt;
+  margin: 10rpx auto;
+  color: #08aeab;
+}
+.bot{
+  display: block;
+  background: white;
+  width: 100%;
+  font-size: 18px;
+  color: #08aeab;
+}

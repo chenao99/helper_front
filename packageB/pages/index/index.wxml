@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<notice-bar :scrollable="true" text="记得每日打卡哦！" left-icon="volume-o" />
+<view class="page-section page-section-spacing swiper">
+  <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{background}}" wx:for-index="index">
+      <swiper-item>
+      <image src="{{item.url}}" class="slide-image" mode="aspectFill"/> 
+      </swiper-item>
+     </block>
+  </swiper>
+</view>
+
+<view class="page-section-spacing">
+ <!-- <scroll-view scroll-y="true" style="height: 600rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="demo1" class="scroll-view-item demo-text-1"></view>
+    <view id="demo2"  class="scroll-view-item demo-text-2"></view>
+    <view id="demo3" class="scroll-view-item demo-text-3"></view>
+  </scroll-view>
+-->
+   <swiper class="main-swpier radius" indicator-dots="true">
+      <swiper-item class="main-core" wx:for="{{cores}}" wx:for-index="idx" wx:for-item="core" wx:key="id">
+        <block wx:for="{{core}}" wx:key="id">
+          <view class="main-core-item" bindtap="disabled_item" data-item='{{item.id}}' data-sindex='{{index}}' data-id='{{idx}}'>
+            <image class="core-item-icon" src="/packageB/images/index/{{item.id}}.png"></image>
+            <text class="core-item-name">{{item.name}}</text>
+          </view>
+        </block>
+      </swiper-item>
+    </swiper>
+  <view class="card">
+  <view style="display:flex;flex-direction: row;justify-content:space-around">
+  <view>
+  <text >{{weather.city.data}}</text>
+  </view>
+   <view>
+  <text>{{weather.weather.text}} : {{weather.weather.data}}</text>
+  </view>
+  </view>
+   <view class="tempreture">
+  <text>{{weather.temperature.text}} : {{weather.temperature.data}} ℃</text>
+  </view>
+ 
+ <view style="display:flex;flex-direction: row;justify-content:space-around">
+  <view>
+  <text>风速 : {{weather.winddirection.data}} {{weather.windpower.data}}</text>
+  </view>
+  <view>
+  <text>{{weather.humidity.text}} : {{weather.humidity.data}}</text>
+  </view>
+  </view>
+</view>
+</view>

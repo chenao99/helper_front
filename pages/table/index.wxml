@@ -1,0 +1,15 @@
+<view class="page__hd">
+  <image class="weui-media-box__thumb" src="/images/table.png" />
+  <view class="page__title">教师课表查询</view>
+ 
+</view>
+<view class="page__bd">
+<i-panel title="搜索框">
+    <i-input value="{{ name }}" type="text" right title="name" mode="wrapped" placeholder="for example:LiGang" maxlength='20'  bind:change="inputname"/>
+    
+</i-panel>
+     <view class="button-sp-area">
+          <button bindtap="search" class="weui-btn" type="primary" plain="true">查询课表</button>
+        </view>
+     
+</view>

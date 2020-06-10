@@ -1,0 +1,34 @@
+<!--sdf.wxml-->
+<view class="container">
+  <!--result-page-->
+  <view class="result-page">
+    <!--result-userInfo-->
+    <view class="result-userInfo result-model">
+    <text>电费详情</text>
+    </view>
+    <!--result-chargeInfo-->
+    <view class="result-chargeInfo">
+      <view class="chargeInfo-num chargeInfo-model result-model">
+        <text class="chargeInfo-model-title">余额</text>
+        <view class="chargeInfo-model-info">
+          <text class="model-info">{{netJson.balance}}</text>元
+        </view>
+      </view>
+      <view class="chargeInfo-cost chargeInfo-model result-model">
+        <block>
+          <text class="chargeInfo-model-title">本月计费</text>
+          <view class="chargeInfo-model-info">
+            <text class="model-info">{{netJson.useFare}}</text> 元
+          </view>
+        </block>
+      </view>
+    </view>
+    <!--result-specificInfo-->
+    <view class="result-specificInfo result-model">
+      <view class="specificInfo-item">
+        <text class="specificInfo-item-label">宿舍</text>
+        <text class="specificInfo-item-value">{{netJson.installedPlace}}</text>
+      </view>
+    </view>
+  </view>
+</view>

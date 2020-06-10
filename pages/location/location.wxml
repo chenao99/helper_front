@@ -1,0 +1,6 @@
+<!--pages/location/location.wxml-->
+<view class='imagesize'>
+  <cover-view bindtap="signin">
+  <cover-image src="/images/定位.png" class='in-image' />
+  </cover-view>
+</view>
